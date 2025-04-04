@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAni & Gang Travel Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="C:\Users\Anil_RR\Downloads\GAni_Gang_Travel\airplane.png"
+             alt="GAni & Gang Logo" style="height: 60px;">
+        <h1>GAni & Gang</h1>
+        <p>"Let's Travel - Discovering New Horizons"</p>
+        <nav>
+            <a href="#home">Home</a> |
+            <a href="#packages">Travel Packages</a> |
+            <a href="#book">Booking</a> |
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to GAni & Gang Travel Services</h2>
+        <p>Your trusted travel partner for memorable journeys.</p>
+    </section>
+
+    <section id="packages">
+        <h2>Our Travel Packages</h2>
+        <div class="package" id="package-1">
+            <h3>Beach Paradise</h3>
+            <p>3 Nights, 4 Days - Relax at the tropical beaches.</p>
+        </div>
+
+        <div class="package" id="package-2">
+            <h3>Mountain Adventure</h3>
+            <p>5 Nights, 6 Days - Explore serene mountain trails.</p>
+        </div>
+
+        <div class="package" id="package-3">
+            <h3>City Lights Tour</h3>
+            <p>2 Nights, 3 Days - Discover the charm of city life.</p>
+        </div>
+
+        <div class="package" id="package-4">
+            <h3>Scuba Diving</h3>
+            <p>3 Nights, 4 Days - Enjoy the scuba diving experience.</p>
+        </div>
+    </section>
+
+    <section id="book">
+        <h2>Book a Package</h2>
+        <form id="book-id" style="display: flex; flex-direction: column; gap: 10px;">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="tel" id="phone" placeholder="Your Phone Number" required>
+            <input type="number" id="travelers" placeholder="Number of Travelers" required>
+            <input type="number" id="days" placeholder="Number of Days" required>
+            <input type="date" id="date" required>
+            <select id="package" required>
+                <option value="" disabled selected>Select a Package</option>
+                <option value="Beach Paradise">Beach Paradise</option>
+                <option value="Mountain Adventure">Mountain Adventure</option>
+                <option value="City Lights Tour">City Lights Tour</option>
+                <option value="Scuba Diving">Scuba Diving</option>
+            </select>
+            <button type="submit">Submit</button>
+            <p id="success-message" style="display: none; color: green; margin-top: 10px;">
+                ✅ Thank you for Booking the Package! We'll get back to you soon.
+            </p>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="social-icons">
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="tel:+1234567890">
+                <i class="fas fa-phone-alt"></i> Call Us
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Visit us at <a href="https://www.gani&gang.com">www.gani&gang.com</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
